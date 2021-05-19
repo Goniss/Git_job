@@ -45,7 +45,7 @@ resource "vsphere_virtual_machine" "ubuntu" {
 
   name = "Ubuntu"
   num_cpus = 1
-  memory = 1024
+  memory = 2048
   resource_pool_id = data.vsphere_resource_pool.pool.id
   datastore_id     = data.vsphere_datastore.datastore1.id
   guest_id = "ubuntu64Guest"
