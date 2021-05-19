@@ -1,18 +1,20 @@
 pipeline {
-    agent any
+    agent {
+        docker { image 'jenkins:slave' }
+    }
 
     stages {
 
         
         stage('TF init') {
             steps {
-                bat 'Terraform init'
+                sh 'Terraform init'
                 echo 'Initialisation du projet Terraform'
             }
         }
         stage('TF plan') {
             steps {
-                bat 'Terraform plan'
+                //sh 'Terraform plan'
                 echo 'Plan du projet Terraform'
                 
             }
