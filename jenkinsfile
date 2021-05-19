@@ -21,6 +21,13 @@ pipeline {
                 
             }
         }
+        stage('TF') {
+            steps {
+             
+                echo ' Terraform'
+                
+            }
+        }        
         
     }
 }
