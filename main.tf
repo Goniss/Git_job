@@ -67,7 +67,7 @@ resource "vsphere_virtual_machine" "ubuntu" {
   wait_for_guest_ip_timeout = -1
   /*clone {
     
-    template_uuid =  data.vsphere_virtual_machine.template.id
+   // template_uuid =  data.vsphere_virtual_machine.template.id
   }*/
 
 
