@@ -2,11 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Preparing Workspace') {
-            steps{
-                git branch:'main', url:'https://github.com/Goniss/Git_job/blob/main/main.tf'
-            }
-        }
+
         
         stage('TF init') {
             steps {
