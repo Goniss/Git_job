@@ -52,7 +52,7 @@ resource "vsphere_virtual_machine" "ubuntu" {
   
   cdrom {
     datastore_id  = data.vsphere_datastore.datastore1.id
-    path = "./ubuntu-18.04.5-desktop-amd64.iso"
+    path = "./ubuntu-20.04.5-desktop-amd64.iso"
   }
 
   network_interface {
