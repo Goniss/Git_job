@@ -2,7 +2,13 @@ pipeline {
     /*agent {
         docker { image 'jenkins:slave' }
     }*/
-    agent any
+    //agent any
+      agent {
+        docker {
+            image 'hashicorp/terraform:light'
+            args '--entrypoint='
+        }
+    }    
     stages {
 
         
