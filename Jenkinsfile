@@ -14,13 +14,13 @@ pipeline {
         
         stage('TF init') {
             steps {
-                sh 'Terraform init'
+                sh 'terraform init'
                 echo 'Initialisation du projet Terraform'
             }
         }
         stage('TF plan') {
             steps {
-                //sh 'Terraform plan'
+                //sh 'terraform plan'
                 echo 'Plan du projet Terraform'
                 
             }
