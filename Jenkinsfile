@@ -20,7 +20,7 @@ pipeline {
         }
         stage('TF plan') {
             steps {
-                //sh 'terraform plan'
+                sh 'terraform plan'
                 echo 'Plan du projet Terraform'
                 
             }
